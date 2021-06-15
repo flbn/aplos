@@ -20,35 +20,34 @@ apolós is developed and built on a macOS machine, it requires:
 ### pre-build 
 ```markdown
 src/
-  pages/
-    dev/
-      dev.md
-    index.md
-    menu.md
   assets/
     image.jpg
-    image2.png
-  templates/
-    index.html
-    menu.html
+  pages/
+    blog/
+      post1.md
+    index.md
+    blog.md
   styles/
-    aqua.css
-    gry.md
+    blog.css
+    global.css
   templates/
     index.html
-    menu.html
-  index.js
+    blog.html
+    blog-post.html
+  build.js
 ```
 ### post-build 
 ```markdown
 build/
-  dev/
-    dev.html
+  assets/
+    image.jpg
+  blog/
+    post1.html
   index.html
-  menu.html
+  blog.html
   styles/
-    aqua.css
-    gry.css
+    blog.css
+    global.css
 ```
 ## commands
 to run developer mode:
