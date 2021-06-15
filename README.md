@@ -2,7 +2,7 @@
 
 aplós is a simple static site generator built with node.js. aplós means simple in greek.
 
-all static site generators claim to be 'small' and/or 'simple' solutions, but you end up having to bend your website's logic to the will of whatever technical decision the original creators made. in essence, that is all software. anyway, i had enough so i built my own. why study documentation for a couple of hours when you can create your own static site generator and study the documentation of the tools you're using for days [haha, totally not weeks]?
+all static site generators claim to be 'small' and/or 'simple' solutions, but you end up having to bend your website's logic to the will of whatever technical decision the original creators made. this one's no different. in essence, that is all software. why study documentation for a couple of hours when you can create your own static site generator and study the documentation of the tools you're using for days [haha, totally not weeks]?
 
 *sigh*
 
