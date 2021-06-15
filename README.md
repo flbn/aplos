@@ -16,6 +16,9 @@ apolós is free to be utilized by individuals and organizations that are not ass
 apolós is developed and built on a macOS machine, it requires:
 - node.js 14
 
+## how it works
+this ssg is very opinionated. it's because i'm not a great programmer (yet), but that's okay. it might be grow to become more liberal as i continue to work on it, or you could contribute, if you wanted. essentially, the `build.js` file will go through the `src` folder and copy over the `pages`, `styles`, `assets` folders into the `build` folder. it will utilize the templates found in the `src/templates` folder and fill those templates up with the coordinating `.md` files found in the `src/pages` folder. take a stroll around the repository and study the file system below to get a better idea of how it works.
+
 ## file system
 the following are an example of how the file system could work.
 
