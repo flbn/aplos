@@ -14,6 +14,6 @@ permission is hereby granted, free of charge, to any person or organization obta
 
     if the user is an organization with multiple users, then the majority (at least 50%) of users must not be assholes.
 
-    if the user is an organization, they cannot have affilitions with law enforcement or military, they are assholes.
+    if the user is an organization, they cannot have affilitions with law enforcement or military. they are assholes.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT EXPRESS OR IMPLIED WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
