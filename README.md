@@ -17,6 +17,8 @@ apolós is developed and built on a macOS machine, it requires:
 - node.js 14
 
 ## file system
+the following are an example of how the file system could work.
+
 ### pre-build 
 ```markdown
 src/
