@@ -10,7 +10,7 @@ also, why program if you don't build your own tools? it's fun this way, you can 
 
 ## license
 
-apolós is free to be utilized by individuals and organizations that are not assholes, by my discretion. for more information, check out the super legit and official [licensing](LICENSE.md) document.
+apolós is free to be utilized by individuals and organizations that are not assholes, by my discretion. for more information, check out the super legit and official [licensing](/LICENSE.md) document.
 
 ## requirements
 apolós is developed and built on a macOS machine, it requires:
