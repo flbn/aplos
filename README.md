@@ -28,7 +28,6 @@ build/
 src/
   assets/
   pages/
-  components/
   templates/
 ```
 ```
