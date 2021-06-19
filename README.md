@@ -39,7 +39,6 @@ build.ts
       src: contents of the website
       src/assets: CSS, images, other static stuff
       src/pages: markdown files to be rendered into HTML (directory structure will be replicated in the final build)
-      src/components: reusable components (headers, footers, etc)
       src/templates: HTML structure for pages (pre-injection)
       build.ts: script for generating build
 
@@ -48,7 +47,7 @@ build.ts
 to build:
 
 ```bash
-deno --allow-read --allow-write build.ts
+deno run --allow-read --allow-write --unstable build.ts
 ```
 
 to run the linter (deno_lint):

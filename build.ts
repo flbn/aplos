@@ -2,7 +2,6 @@ import * as dejs from 'https://deno.land/x/dejs@0.9.3/mod.ts';
 import * as path from "https://deno.land/std@0.99.0/path/mod.ts";
 import { emptyDirSync, copy, expandGlobSync  } from "https://deno.land/std@0.99.0/fs/mod.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
-import * as config from "./site.config.ts";
 
 const decoder = new TextDecoder("utf-8");
 const srcPath = './src'
@@ -32,7 +31,7 @@ for (const file of files) {
 
   // render page
   const pageData = Marked.parse(data);
-  const templateConfig = Object.assign({}, config, {
+  const templateConfig = Object.assign({}, {
     page: pageData.meta
   });
   
