@@ -1,6 +1,5 @@
 ---
 title: home
-template: home
 description: dwmbt's homebase on the internet
 ---
 

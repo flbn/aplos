@@ -1,3 +1,3 @@
-import * as header from "./src/components/head.ts"
+import * as header from "./src/components/header.ts"
 
 export { header };
