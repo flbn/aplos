@@ -2,9 +2,9 @@ import * as dejs from 'https://deno.land/x/dejs@0.9.3/mod.ts';
 import * as path from "https://deno.land/std@0.99.0/path/mod.ts";
 import { emptyDirSync, copy, expandGlobSync  } from "https://deno.land/std@0.99.0/fs/mod.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import * as config from "./site.config.ts";
 
 const decoder = new TextDecoder("utf-8");
-const encoder = new TextEncoder();
 const srcPath = './src'
 const outPath = './build';
 
@@ -32,9 +32,8 @@ for (const file of files) {
 
   // render page
   const pageData = Marked.parse(data);
-  const templateConfig = Object.assign({}, {
-    page: pageData.meta.title,
-    template: pageData.meta.template
+  const templateConfig = Object.assign({}, config, {
+    page: pageData.meta
   });
   
   let pageContent;
@@ -44,7 +43,7 @@ for (const file of files) {
     case '.md':
       pageContent = pageData.content;
       break;
-    case '.ejs':
+    case '.ts':
       pageContent = dejs.render((pageData.content), {
         filename: `${srcPath}/pages/${path.parse(filePath).name}`
       });
@@ -53,10 +52,9 @@ for (const file of files) {
       pageContent = pageData.content;
   }
 
-
-
   // render layout with page contents
-  const template = templateConfig.template || 'default';
+  // save to html
+  const template = templateConfig.page.template || 'default';
   const templateFileName = `../templates/${template}.ejs`;
 
   (async () => {
@@ -68,9 +66,4 @@ for (const file of files) {
     await Deno.copy(output, completePage)
   })();
 
-  // // save the html file
-  // Deno.writeFileSync(`../../${path.parse(filePath).name}.html`, encoder.encode(completePage));
-
-
-  
 }

@@ -1,9 +1,3 @@
-const site = {
-  title: 'NanoGen',
-  description: 'Micro Static Site Generator in deno',
-  basePath: '~/'
-}
+import * as header from "./src/components/head.ts"
 
-export {
-  site
-};
+export { header };
