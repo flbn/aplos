@@ -29,7 +29,7 @@ src/
   assets/
   pages/
   components/
-  layouts/
+  templates/
 ```
 ```
 build.ts
@@ -40,7 +40,7 @@ build.ts
       src/assets: CSS, images, other static stuff
       src/pages: markdown files to be rendered into HTML (directory structure will be replicated in the final build)
       src/components: reusable components (headers, footers, etc)
-      src/layouts: HTML structure for pages (pre-injection)
+      src/templates: HTML structure for pages (pre-injection)
       build.ts: script for generating build
 
 ## commands
