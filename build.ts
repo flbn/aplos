@@ -10,12 +10,17 @@ const outPath = './build';
 // clear destination folder
 emptyDirSync(outPath);
 
+console.log("🚧 building site...");
+console.log();
+
 // copy assets folder
 copy(`${srcPath}/assets`, `${outPath}/assets`);
 
 // read pages
 Deno.chdir(`./${srcPath}/pages`);
 const files = expandGlobSync('**\/*.{md,ejs,html}');
+console.log("📰 reading pages...");
+console.log();
 
 for (const file of files) {
   // create new build path
@@ -63,5 +68,6 @@ for (const file of files) {
     const completePage = await Deno.open(`${buildPath}/${path.parse(filePath).name}.html`, {create: true, write: true});
     await Deno.copy(output, completePage)
   })();
-
+  console.log(`👍 created ${path.parse(filePath).name}.html!`);
+  console.log();
 }
