@@ -1,3 +1,3 @@
 # templates
 
-add your static files here. these should be things like CSS files, image files, etc.
+add your HTML templates here. this is most likely going to be the bulk of your page. for instance, you would place the body here. an example has been provided.
