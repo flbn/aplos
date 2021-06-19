@@ -1,8 +1,7 @@
 ---
 title: home
-author: dwmbt
-template: index
+description: dwmbt's homebase on the internet
 ---
 
-hi. i'm getting better at this programming thing, i think.
-[check out my blog page.](/blog.html)
+# dwmbt
+## i do the [beep boop]('/menu')
