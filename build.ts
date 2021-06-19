@@ -17,7 +17,6 @@ copy(`${srcPath}/assets`, `${outPath}/assets`);
 Deno.chdir(`./${srcPath}/pages`);
 const files = expandGlobSync('**\/*.{md,ejs,html}');
 
-console.log(Deno.cwd())
 for (const file of files) {
   // create new build path
   const filePath = path.relative( "./", file.path);
